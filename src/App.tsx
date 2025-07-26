@@ -5,6 +5,7 @@ import { LeadsPage } from './components/leads/LeadsPage'
 import { ClientsPage } from './components/clients/ClientsPage'
 import { DealsPage } from './components/deals/DealsPage'
 import { AnalyticsPage } from './components/analytics/AnalyticsPage'
+import { SettingsPage } from './components/settings/SettingsPage'
 import { blink } from './blink/client'
 
 function App() {
@@ -79,11 +80,7 @@ function App() {
       case 'settings':
         return (
           <div className="p-6">
-            <h1 className="text-3xl font-bold text-gray-900">Настройки</h1>
-            <p className="text-gray-600 mt-1">Конфигурация системы</p>
-            <div className="mt-8 text-center text-gray-500">
-              Раздел в разработке...
-            </div>
+            <SettingsPage />
           </div>
         )
       default:
