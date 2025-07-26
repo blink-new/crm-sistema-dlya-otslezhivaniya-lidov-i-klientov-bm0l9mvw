@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Sidebar } from './components/layout/Sidebar'
 import { Dashboard } from './components/dashboard/Dashboard'
+import { LeadsPage } from './components/leads/LeadsPage'
 import { blink } from './blink/client'
 
 function App() {
@@ -51,11 +52,7 @@ function App() {
       case 'leads':
         return (
           <div className="p-6">
-            <h1 className="text-3xl font-bold text-gray-900">Лиды</h1>
-            <p className="text-gray-600 mt-1">Управление потенциальными клиентами</p>
-            <div className="mt-8 text-center text-gray-500">
-              Раздел в разработке...
-            </div>
+            <LeadsPage />
           </div>
         )
       case 'clients':
