@@ -4,6 +4,7 @@ import { Dashboard } from './components/dashboard/Dashboard'
 import { LeadsPage } from './components/leads/LeadsPage'
 import { ClientsPage } from './components/clients/ClientsPage'
 import { DealsPage } from './components/deals/DealsPage'
+import { AnalyticsPage } from './components/analytics/AnalyticsPage'
 import { blink } from './blink/client'
 
 function App() {
@@ -72,11 +73,7 @@ function App() {
       case 'analytics':
         return (
           <div className="p-6">
-            <h1 className="text-3xl font-bold text-gray-900">Аналитика</h1>
-            <p className="text-gray-600 mt-1">Отчеты и статистика</p>
-            <div className="mt-8 text-center text-gray-500">
-              Раздел в разработке...
-            </div>
+            <AnalyticsPage />
           </div>
         )
       case 'settings':
